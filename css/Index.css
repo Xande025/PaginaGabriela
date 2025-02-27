@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/IMG/Fundo.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    display: block;
+    margin: 0;
+    margin-bottom: 2px; /* Reduza a margem inferior para aproximar os h1 */
+    padding: 0px;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase; /* Caixa alta */
+    color: white;
+    font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+}
+
+.Story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Story img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.Story img.icon {
+    margin-top: 50px;
+    width: 50px; /* Ajuste a largura conforme necessário */
+    height: 50px; /* Ajuste a altura conforme necessário */
+}
+
+/* Media queries para responsividade */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .Story img.icon {
+        width: 70px; /* Ajuste a largura conforme necessário */
+        height: 70px; /* Ajuste a altura conforme necessário */
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: 0; /* Remova as margens laterais */
+    }
+
+    .container {
+        padding: 60px;
+    }
+
+    h1 {
+        font-size: 4em;
+
+    }
+
+    .title {
+        display: flex;
+        gap: 25px;
+    }
+
+    .Story img.icon {
+        width: 90px; /* Ajuste a largura conforme necessário */
+        height: 90px; /* Ajuste a altura conforme necessário */
+    }
+}
